@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="Test">
+  <parameter name="driver" value="PARALLEL,GRID,CHROME"/>
+    <classes>
+    <class name="org.atmecs.website.testscripts.Home"/>
+    <class name="org.atmecs.website.testscripts.Services"/>
+    <class name="org.atmecs.website.testscripts.Insights"/>
+    </classes>
+  </test>
+  <test name="Test1">
+  <parameter name="driver" value="PARALLEL,GRID,CHROME"/>
+    <classes>
+    <class name="org.atmecs.website.testscripts.Home"/>
+    <class name="org.atmecs.website.testscripts.Services"/>
+    <class name="org.atmecs.website.testscripts.Insights"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="Regression1(failed)">
+    <classes>
+      <class name="org.atmecs.website.testscripts.Insights">
+        <methods>
+          <include name="baseSetup"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="validateBlogs"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- org.atmecs.website.testscripts.Insights -->
+    </classes>
+  </test> <!-- Regression1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

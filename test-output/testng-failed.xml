@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="15" name="Failed suite [mysuite]" parallel="tests">
+  <test thread-count="15" name="Test validate FIREFOXInsights(failed)" parallel="tests">
+    <parameter name="Name" value="FIREFOX"/>
+    <classes>
+      <class name="org.atmecs.website.testscripts.Insights">
+        <methods>
+          <include name="baseSetup"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="validateBlogs" invocation-numbers="0"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- org.atmecs.website.testscripts.Insights -->
+    </classes>
+  </test> <!-- Test validate FIREFOXInsights(failed) -->
+  <test thread-count="15" name="Test validate FIREFOXServices(failed)" parallel="tests">
+    <parameter name="Name" value="FIREFOX"/>
+    <classes>
+      <class name="org.atmecs.website.testscripts.Services">
+        <methods>
+          <include name="servicesOptionCheck" invocation-numbers="0"/>
+          <include name="baseSetup"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- org.atmecs.website.testscripts.Services -->
+    </classes>
+  </test> <!-- Test validate FIREFOXServices(failed) -->
+  <test thread-count="15" name="Test validate FIREFOXHome(failed)" parallel="tests">
+    <parameter name="Name" value="FIREFOX"/>
+    <classes>
+      <class name="org.atmecs.website.testscripts.Home">
+        <methods>
+          <include name="footerValidate" invocation-numbers="0"/>
+          <include name="baseSetup"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
+        </methods>
+      </class> <!-- org.atmecs.website.testscripts.Home -->
+    </classes>
+  </test> <!-- Test validate FIREFOXHome(failed) -->
+</suite> <!-- Failed suite [mysuite] -->
